@@ -24,19 +24,25 @@ variable "instance_count" {
 
 variable "dns_names" {
   description = "The route53 name to give it"
-  type = "list"
+  type        = "list"
 }
 
 variable "vpc_id" {}
+
 variable "vpc_name" {}
+
 variable "app_name" {}
+
 variable "zone_id" {}
+
 variable "public_subnet_ids" {
   type = "list"
 }
+
 variable "security_group_ids" {
   type = "list"
 }
+
 variable "instance_tags" {
   type = "map"
 }
