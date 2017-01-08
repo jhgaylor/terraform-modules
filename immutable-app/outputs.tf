@@ -19,5 +19,5 @@ output "app-az" {
 }
 
 output "app-instance-id" {
-  value = "${aws_instance.app.id}"
+  value = "${aws_instance.app.*.id}"
 }
