@@ -23,5 +23,5 @@ output "app-instance-ids" {
 }
 
 output "app-iam-role-id" {
-  vaule = "${aws_iam_role.app.id}"
+  value = "${aws_iam_role.app.id}"
 }
