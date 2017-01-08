@@ -21,3 +21,7 @@ output "app-azs" {
 output "app-instance-ids" {
   value = ["${aws_instance.app.*.id}"]
 }
+
+output "app-iam-role-id" {
+  vaule = "${aws_iam_role.app.id}"
+}
